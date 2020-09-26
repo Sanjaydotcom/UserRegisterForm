@@ -9,12 +9,16 @@ export default function WelcomePage(props) {
   const [userName, setUserName] = useState("")
 
   useEffect(() => {
+
     const values = JSON.parse(localStorage.getItem('formValues'));
+    if (values == undefined) {
+      props.history.push("/");
+    }
     setUserName(values.fullName)
   },[]);
   return (
     <>
-      <div className={classes.pageContainer}>
+      {userName !== "" ?<div className={classes.pageContainer}>
         <Grid container spacing={3} >
           <Grid item xs={12} sm={12} className={classes.content}>
 
@@ -32,7 +36,7 @@ export default function WelcomePage(props) {
             </Typography>
           </Grid>
         </Grid>
-      </div>
+      </div>:null}
     </>
   );
 }
