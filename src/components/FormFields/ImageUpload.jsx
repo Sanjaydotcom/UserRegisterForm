@@ -23,10 +23,10 @@ export default function ImageUpload() {
         <Grid item xs={3} sm={12}>
           <label htmlFor="upload-button" className={classes.UploadContainer}>
             {image.preview ? (
-              <img src={image.preview} alt="Company Logo" />
+              <img src={image.preview} alt=""/>
             ) : (
                 <>
-                  <img src={Noimage} alt="No Image" />
+                  <img src={Noimage} alt="" />
                 </>
               )}
             <h5 className={classes.UploadText} >Upload your Company Logo</h5>

@@ -19,7 +19,7 @@ export default function WelcomePage(props) {
           <Grid item xs={12} sm={12} className={classes.content}>
 
             <Typography component="h2" variant="h3" align="center">
-              <img src={done} className={classes.contentImage} />
+              <img src={done} className={classes.contentImage} alt="" />
               <Box fontWeight="600" letterSpacing={3}>
                 Congrats, {userName}
               </Box >

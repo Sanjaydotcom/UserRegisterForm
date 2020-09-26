@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import OtpInput from 'react-otp-input';
 import { at } from 'lodash';
 import { useField } from 'formik';
 import {
@@ -38,14 +37,14 @@ export default function SelectGender(props) {
             name="male"
             variant="outlined"
              onClick={() => selectGender("Male")}
-            className={gender == "Male" ? classes.genderSelectedButton : classes.genderButton}
+            className={gender === "Male" ? classes.genderSelectedButton : classes.genderButton}
           >
             Male
             </Button>
           <Button
             onClick={() => selectGender("Female")}
             variant="outlined"
-            className={gender == "Female" ? classes.genderSelectedButton : classes.genderButton}
+            className={gender === "Female" ? classes.genderSelectedButton : classes.genderButton}
              >
             Female
            </Button>
@@ -53,7 +52,7 @@ export default function SelectGender(props) {
           <Button
             onClick={() => selectGender("Other")}
             variant="outlined"
-            className={gender == "Other" ? classes.genderSelectedButton : classes.genderButton}
+            className={gender === "Other" ? classes.genderSelectedButton : classes.genderButton}
              >
             Other
            </Button>

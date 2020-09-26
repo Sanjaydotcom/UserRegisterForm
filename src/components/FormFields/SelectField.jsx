@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { at } from 'lodash';
 import { useField } from 'formik';
 import {
-  InputLabel,
   FormControl,
   Select,
   MenuItem,
@@ -29,7 +28,7 @@ function SelectField(props) {
 
   return (
     <>
-      <p className={focus == "focused" ? classes.LabelColor : null}>{props.label}</p>
+      <p className={focus === "focused" ? classes.LabelColor : null}>{props.label}</p>
       <FormControl onFocus={() => { setFocus("focused") }}
         onBlur={() => { setFocus("unfocused") }} variant="outlined" {...rest} error={isError}>
 

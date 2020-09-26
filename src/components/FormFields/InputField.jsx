@@ -25,8 +25,8 @@ export default function InputField(props) {
 
   return (
     <>
-      <p className={focus == "focused" ? classes.LabelColor : null}>{props.label}</p>
-      <FormControl variant="outlined" {...rest} error={meta.touched && meta.error && true}>
+      <p className={focus === "focused" ? classes.LabelColor : null}>{props.label}</p>
+      <FormControl variant="outlined" {...rest}  error={meta.touched && meta.error && true}>
         <TextField
           type="text"
           color="primary"

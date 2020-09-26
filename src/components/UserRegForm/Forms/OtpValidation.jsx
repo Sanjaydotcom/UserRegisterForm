@@ -17,7 +17,7 @@ export default function OtpValidation(props) {
         </Grid>
         <Grid item xs={12} md={12}>
 
-        <br/>
+          <br />
         </Grid>
       </Grid>
     </React.Fragment>

@@ -11,7 +11,6 @@ const {
     termsAndConditions,
     jobTitile,
     yearsOfExperience,
-    expiryDate,
     otp
   }
 } = checkoutFormModel;
@@ -27,6 +26,5 @@ export default {
   [termsAndConditions.name]: false,
   [jobTitile.name]: '',
   [yearsOfExperience.name]: '',
-  [expiryDate.name]: '',
   [otp.name]: ''
 };

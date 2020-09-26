@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Select, { components } from "react-select";
 import countryList from "react-select-country-list";
 import { at } from 'lodash';
@@ -59,28 +59,27 @@ const styles = {
   },
   control: (base, state) => {
     return {
-    
+
       ...base,
       borderColor: state.isFocused
-      ? brandColor
-      : base.borderColor,
-    
+        ? brandColor
+        : base.borderColor,
+
       '&:hover': { borderColor: '#f25436' },
-        boxShadow: 'none', 
-        
-  }
+      boxShadow: 'none',
+
+    }
   },
 };
 
 export default function CountrySelector(props) {
   const classes = useStyles();
-  const [options, setOptions] = useState(countryList().getData());
+  const [options, setOptions] = useState([]);
   const [valueCust, setValueCust] = useState(null);
   const { label, data, ...rest } = props;
-  const [field, meta, helper] = useField(props);
+  const [ meta, helper] = useField(props);
   const [focus, setFocus] = useState("unfocused")
   const { setValue } = helper;
-  const { value: selectedValue } = field;
   const [touched, error] = at(meta, 'touched', 'error');
   const isError = touched && error && true;
   function _renderHelperText() {
@@ -94,16 +93,21 @@ export default function CountrySelector(props) {
     setValueCust(value);
     setValue(value)
   };
+
+  useEffect(() => {
+    setOptions(countryList().getData())
+  }, [])
+
   return (
     <>
-      <p className={focus == "focused" ? classes.LabelColor : null}>{props.label}</p>
+      <p className={focus === "focused" ? classes.LabelColor : null}>{props.label}</p>
       <FormControl
-      
+
         onFocus={() => { setFocus("focused") }}
         onBlur={() => { setFocus("unfocused") }}
         variant="outlined" {...rest} error={meta.touched && meta.error && true} >
         <Select
-            errorText={touched && error}
+          errorText={touched && error}
           styles={styles}
           options={options}
           value={valueCust}

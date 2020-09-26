@@ -32,8 +32,6 @@ export default function MobileField(props) {
     }
   }
 
-  console.log('focus', focus);
-
   return (
     <>
       <p className={focus === "focused" ? classes.LabelColor : null}>{props.label}</p>
