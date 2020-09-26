@@ -78,7 +78,7 @@ export default function CountrySelector(props) {
 
   const [valueCust, setValueCust] = useState(null);
   const { label, data, ...rest } = props;
-  const [ field,meta, helper] = useField(props);
+  const [ meta, helper] = useField(props);
   const [focus, setFocus] = useState("unfocused")
   const { setValue } = helper;
   const [touched, error] = at(meta, 'touched', 'error');
