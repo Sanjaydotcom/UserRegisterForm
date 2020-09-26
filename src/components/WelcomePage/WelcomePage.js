@@ -11,12 +11,12 @@ export default function WelcomePage(props) {
   useEffect(() => {
 
     const values = JSON.parse(localStorage.getItem('formValues'));
-    if (values === undefined) {
+    if (values === null) {
       props.history.push("/");
     } else {
       setUserName(values.fullName)
     }
-  }, []);
+  }, [props.history]);
   return (
     <>
       {userName === "" ? null : <div className={classes.pageContainer}>
