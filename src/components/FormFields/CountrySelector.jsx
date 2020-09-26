@@ -74,10 +74,11 @@ const styles = {
 
 export default function CountrySelector(props) {
   const classes = useStyles();
-  const [options, setOptions] = useState([]);
+  const [options, setOptions] = useState(countryList().getData());
+
   const [valueCust, setValueCust] = useState(null);
   const { label, data, ...rest } = props;
-  const [ meta, helper] = useField(props);
+  const [ field,meta, helper] = useField(props);
   const [focus, setFocus] = useState("unfocused")
   const { setValue } = helper;
   const [touched, error] = at(meta, 'touched', 'error');
@@ -89,9 +90,10 @@ export default function CountrySelector(props) {
     }
   }
   const changeHandler = value => {
-    //function for set value to formik
+    //function (for set value to formik
+    console.log(value)
     setValueCust(value);
-    setValue(value)
+    setValue(value);
   };
 
   useEffect(() => {
