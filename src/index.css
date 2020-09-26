@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width:100wh;
+  overflow: hidden;
 }
 
 code {
@@ -90,4 +92,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .MuiSelect-outlined.MuiSelect-outlined {
   padding-right: 32px;
   width:505px!important;
+}
+.makeStyles-stepper-2 {
+
+
 }
