@@ -35,7 +35,7 @@ export default function MobileField(props) {
   return (
     <>
       <p className={focus === "focused" ? classes.LabelColor : null}>{props.label}</p>
-      <FormControl variant="outlined" className classes={classes.formControl} {...rest} error={meta.touched && meta.error && true} className={meta.error? 'error' : ''}>
+      <FormControl variant="outlined" classes={classes.formControl} {...rest} error={meta.touched && meta.error && true} className={meta.error? 'error' : ''}>
         <PhoneInput
           country={'in'}
           {...field}
