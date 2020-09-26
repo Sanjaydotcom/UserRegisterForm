@@ -11,13 +11,13 @@ export default makeStyles(theme => ({
       backgroundColor: primary,
     color: theme.palette.text.primary,
     height:"60px!important",
-    paddingTop:"10px"
+    paddingTop:"5px"
   },
   stepper: {
     width: 'auto',
     height:"60px",
     position:"relative",
-    top:"-10px",
+    top:"-5px",
       marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
