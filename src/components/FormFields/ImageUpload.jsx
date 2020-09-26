@@ -20,7 +20,7 @@ export default function ImageUpload() {
   return (
     <>
       <Grid container >
-        <Grid item xs={3} sm={12}>
+        <Grid item lg={12} sm={12}>
           <label htmlFor="upload-button" className={classes.UploadContainer}>
             {image.preview ? (
               <img src={image.preview} alt=""/>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState}from 'react';
 import OtpInput from 'react-otp-input';
 import { at } from 'lodash';
 import { useField } from 'formik';
@@ -11,6 +11,8 @@ export default function OtpInputFrom(props) {
   const classes = useStyles();
   const { errorText, ...rest } = props;
   const [field, meta, helper] = useField(props);
+  const [focus, setFocus] = useState("");
+
   const { setValue } = helper;
 
   function _renderHelperText() {
@@ -27,7 +29,7 @@ export default function OtpInputFrom(props) {
 
   return (
     <>
-      <p>{props.label}</p>
+      <p className={focus === "focused" ? classes.LabelColor : null}>{props.label}</p>
       <FormControl variant="outlined" {...rest} error={meta.touched && meta.error && true}>
         <OtpInput
           {...field}
@@ -37,8 +39,8 @@ export default function OtpInputFrom(props) {
           numInputs={5}
           containerStyle={classes.OtpContainer}
           inputStyle={classes.OtpSingleBox}
-         
-          shouldAutoFocus={true}
+          onFocus={() => { setFocus("focused") }}
+          onBlur={() => { setFocus("unfocused") }} 
         />
         {_renderHelperText()}
       </FormControl>

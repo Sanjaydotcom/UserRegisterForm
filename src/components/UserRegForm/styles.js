@@ -1,36 +1,36 @@
 import { makeStyles } from '@material-ui/core/styles';
-const primary = "#324466"; 
+const primary = "#324466";
 export default makeStyles(theme => ({
 
-  FormHeader:{
+  FormHeader: {
     marginTop: theme.spacing(3),
-    backgroundColor:"white"
+    backgroundColor: "white"
   },
   stepper: {
     padding: theme.spacing(2, 0, 2),
     backgroundColor: primary,
 
   },
-  stepperLabel:{
+  stepperLabel: {
     color: theme.palette.text.default
   },
   buttons: {
-    display: 'flex', 
+    display: 'flex',
   },
-  backbutton:{
-    width:"25%!important",
-    backgroundColor:"#e6e6e6",
+  backbutton: {
+    width: "25%!important",
+    backgroundColor: "#e6e6e6",
     height: "43px",
     marginRight: "15px"
   },
-  secondButton:{
-    width:"400px!important",
-    backgroundColor:"#f25436",
+  secondButton: {
+    width: "400px!important",
+    backgroundColor: "#f25436",
   },
   button: {
     marginTop: theme.spacing(3),
-   backgroundColor:"#f25436",
-    width:"552px!important",
+    backgroundColor: "#f25436",
+    width: "552px!important",
   },
   wrapper: {
     position: 'relative'
@@ -50,17 +50,16 @@ export default makeStyles(theme => ({
       backgroundColor: "white"
     }
   },
-  emailHeader:{
-    fontWeight:600
+  emailHeader: {
+    fontWeight: 600
   },
-  emailFooter:{
-    color:"#f25436",
+  emailFooter: {
+    color: "#f25436",
   },
-  mobileInput:{
+  mobileInput: {
+    width: "551px!important",
+    height: "40px!important",
 
-      width:"551px!important",
-      height: "40px!important",
-    
   },
   root: {
     width: 'auto',
@@ -68,7 +67,7 @@ export default makeStyles(theme => ({
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
       width: 600,
-      backgroundColor:"white",
+      backgroundColor: "white",
       marginLeft: 'auto',
       marginRight: 'auto'
     },
@@ -84,83 +83,77 @@ export default makeStyles(theme => ({
       marginBottom: theme.spacing(6),
       padding: theme.spacing(3)
     },
-    borderBottom:"1px solid lightgrey"
+    borderBottom: "1px solid lightgrey"
   },
-  genderContainer:{
-    display:"flex",
+  genderContainer: {
+    display: "flex",
     "& button": {
-    marginRight:"20px"
+      marginRight: "20px"
     }
   },
-  genderSelectedButton:{
-    color:"#f25436",
-    backgroundColor:"#fdefe5",
-    border:"none",
+  genderSelectedButton: {
+    color: "#f25436",
+    backgroundColor: "#fdefe5",
+    border: "none",
     "&:hover": {
-     
-      color:"#f25436",
-      backgroundColor:"#fdefe5",
-      border:"none",
+      color: "#f25436",
+      backgroundColor: "#fdefe5",
+      border: "none",
     }
   },
-  genderButton:{
+  genderButton: {
     textTransform: 'none',
-    borderColor:"#c7c7c7"
+    borderColor: "#c7c7c7"
   },
-  OtpContainer:{
-    width:"551px",
- 
+  OtpContainer: {
+    width: "551px"
   },
-  otpFocusStyle:{
- 
-    },
-  OtpSingleBox:{
-    width:"62px !important",
-    height:"62px !important" ,
-    fontSize:"22px",
-    marginRight:"42px",
+  otpFocusStyle: {
 
   },
-  formControl:{
-    
-      backgroundColor:" rgb(253, 214, 214) !important",
-      color: "rgb(104, 7, 60)",
-      height: "55px !important",
-      width: "300px !important"
-  
+  OtpSingleBox: {
+    width: "62px !important",
+    height: "62px !important",
+    fontSize: "22px",
+    marginRight: "42px",
+
+  },
+  formControl: {
+    backgroundColor: " rgb(253, 214, 214) !important",
+    color: "rgb(104, 7, 60)",
+    height: "55px !important",
+    width: "300px !important"
   },
 
-  UploadContainer:{
-      display:"flex",
-     
-      "& img": {
-     width:"80px",
-     heigth:"150px",   
-       borderRadius:"50%"
-      }
+  UploadContainer: {
+    display: "flex",
+    "& img": {
+      width: "80px!important",  
+     height: "80px!important",
+      borderRadius: "50%"
+    }
   },
-  UploadText:{
-    color:"#f25436",
-  marginLeft:"40px",
-  letterSpacing:"1px",
-  fontWeight:"300",
-  fontSize:"15px",
+  UploadText: {
+    color: "#f25436",
+    marginLeft: "40px",
+    letterSpacing: "1px",
+    fontWeight: "300",
+    fontSize: "15px",
 
-},
-checkBoxLabel:{
-  marginTop:"12px!important",
-  "& span": {
-     
-    color:"#f25436!important"
+  },
+  checkBoxLabel: {
+    marginTop: "12px!important",
+    "& span": {
+      color: "#f25436!important"
+    }
+  },
+  LabelColor: {
+    color: "#f25436!important"
+  },
+  formSeperator: {
+    position: "relative",
+    left: "-24px",
+    width: "109%",
+    opacity: "0.2"
   }
-},
-LabelColor:{
-  color:"#f25436!important"
-},
-formSeperator:{
-  position:"relative",
-  left:"-24px",
-  width:"109%",
-  opacity:"0.2"
-}
 }));

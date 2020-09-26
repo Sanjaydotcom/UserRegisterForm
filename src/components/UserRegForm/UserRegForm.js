@@ -35,6 +35,7 @@ function _renderStepContent(step) {
     case 2:
       return <OtpValidation formField={formField} />;
 
+
     default:
       return <div>Not Found</div>;
   }
