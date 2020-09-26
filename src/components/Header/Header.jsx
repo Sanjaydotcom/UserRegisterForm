@@ -9,7 +9,7 @@ export default function Header(props) {
       <div position="absolute" className={classes.appBar}>
         <Grid container spacing={3} className={classes.stepper}>
      
-          <Grid item xs={8} sm={12} center>
+          <Grid item xs={12} lg={12} md={12} sm={12} center>
             {props.children}
           </Grid>
         </Grid>

@@ -16,7 +16,7 @@ export default makeStyles(theme => ({
 
   },
   stepper: {
-    width: '900px!important',
+    width: '950px',
     height:"60px",
    
       marginLeft: "theme.spacing(2)",
