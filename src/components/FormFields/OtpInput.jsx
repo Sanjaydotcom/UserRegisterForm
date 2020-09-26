@@ -37,6 +37,7 @@ export default function OtpInputFrom(props) {
           focusStyle={classes.otpFocusStyle}
           onChange={handleChange}
           numInputs={5}
+          shouldAutoFocus={true}
           containerStyle={classes.OtpContainer}
           inputStyle={classes.OtpSingleBox}
           onFocus={() => { setFocus("focused") }}
