@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Stepper,
   Step,
@@ -9,8 +9,8 @@ import {
 } from '@material-ui/core';
 import { Formik, Form } from 'formik';
 import Header from '../Header/Header';
-import AddressForm from './Forms/AddressForm';
-import PaymentForm from './Forms/PaymentForm';
+import PersonalDetails from './Forms/PersonalDetails';
+import CompanyDetails from './Forms/CompanyDetails';
 import OtpValidation from './Forms/OtpValidation';
 import validationSchema from './FormModel/validationSchema';
 import checkoutFormModel from './FormModel/checkoutFormModel';
@@ -28,11 +28,12 @@ function _renderStepContent(step) {
   //function for render Stepper Step
   switch (step) {
     case 0:
-      return <AddressForm formField={formField} />;
+      return <PersonalDetails formField={formField} />;
+
     case 1:
-      return <PaymentForm formField={formField} />;
+      return <CompanyDetails formField={formField} />;
     case 2:
-      return <OtpValidation formField={formField} />;  
+      return <OtpValidation formField={formField} />;
 
     default:
       return <div>Not Found</div>;
@@ -46,9 +47,9 @@ export default function UserRegForm(props) {
   const isLastStep = activeStep === steps.length - 1;
 
   useEffect(() => {
-      localStorage.clear();
-   });
-  
+    localStorage.clear();
+  });
+
   function _sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
@@ -56,12 +57,12 @@ export default function UserRegForm(props) {
   async function _submitForm(values, actions) {
     await _sleep(1000);
     console.log(JSON.stringify(values, null, 2));
-  const formValues = JSON.stringify(values, null, 2)
-  console.log(formValues)
-  localStorage.setItem("formValues", formValues);
+    const formValues = JSON.stringify(values, null, 2)
+    console.log(formValues)
+    localStorage.setItem("formValues", formValues);
     actions.setSubmitting(false);
     props.history.push("/Welcome");
-   
+
   }
 
   function _handleSubmit(values, actions) {

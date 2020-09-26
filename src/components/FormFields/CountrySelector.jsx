@@ -57,16 +57,19 @@ const styles = {
     const height = "30px";
     return { ...base, height };
   },
-  control: (base, state) => ({
-    ...base,
-    borderColor: state.isFocused
-    ? brandColor
-    : base.borderColor,
-  
-    '&:hover': { borderColor: '#f25436' },
-      boxShadow: 'none', 
-      
-}),
+  control: (base, state) => {
+    return {
+    
+      ...base,
+      borderColor: state.isFocused
+      ? brandColor
+      : base.borderColor,
+    
+      '&:hover': { borderColor: '#f25436' },
+        boxShadow: 'none', 
+        
+  }
+  },
 };
 
 export default function CountrySelector(props) {
@@ -106,6 +109,8 @@ export default function CountrySelector(props) {
           value={valueCust}
           showDefaultOption={true}
           onChange={changeHandler}
+          classNamePrefix='cst-option'
+          className={['cst-opt', meta.error ? 'error' : ''].join(' ')}
           components={{
             Option: CountryFlagSelectOption,
             ValueContainer: CountryFlagValueContainer

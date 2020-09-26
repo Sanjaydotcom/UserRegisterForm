@@ -54,12 +54,6 @@ export default {
       label: 'Years Of Experience',
       requiredErrorMsg: 'Experience is required'
     },
-    cardNumber: {
-      name: 'cardNumber',
-      label: 'Card number*',
-      requiredErrorMsg: 'Card number is required',
-      invalidErrorMsg: 'Card number is not valid (e.g. 4111111111111)'
-    },
     expiryDate: {
       name: 'expiryDate',
       label: 'Expiry date*',
@@ -68,7 +62,7 @@ export default {
     },
     otp: {
       name: 'otp',
-      label: 'Enter OTP here*',
+      label: 'Enter OTP here',
       requiredErrorMsg: 'OTP is required',
           }
   }

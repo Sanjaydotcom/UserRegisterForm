@@ -3,11 +3,7 @@ import { Grid } from '@material-ui/core';
 import { InputField, SelectField, CountrySelector, MobileField } from '../../FormFields';
 import SelectGender from "../../FormFields/SelectGender"
 const states = [
-  {
-    value: undefined,
-    label: 'None'
-  },
-  {
+    {
     value: '1',
     label: 'Kerala'
   },

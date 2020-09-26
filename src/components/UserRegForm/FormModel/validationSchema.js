@@ -28,7 +28,10 @@ export default [
       .test(
         'len',
         `${mobile.invalidErrorMsg}`,
-        val => val && val.length >= 10,
+        val => {
+          console.log(`value`, val);
+          return val && val.length >=8
+        },
       ),
     }),
   Yup.object().shape({

@@ -1,31 +1,26 @@
 import { makeStyles } from '@material-ui/core/styles';
-import indigo from '@material-ui/core/colors/indigo';
-const primary = indigo[800]; 
+const primary = "#324466"; 
 export default makeStyles(theme => ({
 
   FormHeader:{
     marginTop: theme.spacing(3),
     backgroundColor:"white"
   },
-
-
   stepper: {
     padding: theme.spacing(2, 0, 2),
     backgroundColor: primary,
-    
   },
   stepperLabel:{
     color: theme.palette.text.default
   },
   buttons: {
-    display: 'flex',
-    
+    display: 'flex', 
   },
   backbutton:{
     width:"25%!important",
     backgroundColor:"#e6e6e6",
     height: "44px",
-    marginTop: "8px"
+    marginRight: "15px"
   },
   secondButton:{
     width:"400px!important",
@@ -34,11 +29,9 @@ export default makeStyles(theme => ({
   button: {
     marginTop: theme.spacing(3),
    backgroundColor:"#f25436",
-    width:"545px!important",
+    width:"552px!important",
   },
-  
   wrapper: {
-    margin: theme.spacing(1),
     position: 'relative'
   },
   buttonProgress: {
@@ -66,9 +59,7 @@ export default makeStyles(theme => ({
 
       width:"551px!important",
       height: "40px!important",
-      "& :focus": {
-        border:"2px solid f25436"
-        }
+    
   },
   root: {
     width: 'auto',
@@ -128,7 +119,7 @@ export default makeStyles(theme => ({
     fontSize:"22px",
     marginRight:"42px",
     "&:focus": {
-      border:"2px solid red"
+     
     }
   },
   formControl:{

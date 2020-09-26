@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import indigo from '@material-ui/core/colors/indigo';
-const primary = indigo[800]; 
+const primary = "#324466"; 
 
 export default makeStyles(theme => ({
   appBar: {

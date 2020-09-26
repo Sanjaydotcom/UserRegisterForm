@@ -28,20 +28,28 @@ export default function MobileField(props) {
     setValue(e.target.value);
   }
 
+  const cbFocusChange = (type, e) => {
+    setFocus(type)
+    if (e) {
+      setValue(e.target.value)
+      
+    }
+  }
+
+  console.log('focus', focus);
+
   return (
     <>
       <p className={focus == "focused" ? classes.LabelColor : null}>{props.label}</p>
-      <FormControl variant="outlined" classes={classes.formControl} {...rest} error={meta.touched && meta.error && true}>
+      <FormControl variant="outlined" className classes={classes.formControl} {...rest} error={meta.touched && meta.error && true} className={meta.error? 'error' : ''}>
         <PhoneInput
-          country={'us'}
+          country={'in'}
           {...field}
-          onFocus={() => { setFocus("focused") }}
-          onBlur={() => { setFocus("unfocused") }}
+          onFocus={() => cbFocusChange('focused')}
+          onBlur={(e) => cbFocusChange('unfocused', e)}
 
           value={field.value}
           inputClass={classes.mobileInput}
-          onBlur={_onChange}
-
         />
         {_renderHelperText()}
       </FormControl>

@@ -1,23 +1,23 @@
 import { makeStyles } from '@material-ui/core/styles';
 import indigo from '@material-ui/core/colors/indigo';
-import bgImg from "../../img/bg.jpg";
-const primary = indigo[800]; 
 export default makeStyles(theme => ({
 
-    pageContainer:{
-        width:"100%",
-        height:"100vh",
-      
-      backgroundImage:`url(${bgImg})`,
-      backgroundPosition:" fixed",
-      backgroundSize:"cover",
-      overflow:"hidden",
-      opacity: "0.8",
+    pageContainer: {
+        width: "100%",
+        height: "100vh",
+        backgroundPosition: " fixed",
+        backgroundSize: "cover",
+        overflow: "hidden",
+        opacity: "0.8",
     },
-    content:{
-        marginTop:"25vh"
+    content: {
+        marginTop: "35vh"
     },
-    useName:{
-        color: "#f25436" 
+    contentImage: {
+        width: "80px",
+        height: "80px",
+    },
+    useName: {
+        color: "#f25436"
     }
 }));
