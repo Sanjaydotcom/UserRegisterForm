@@ -41,7 +41,7 @@ export default function AddressForm(props) {
         </Grid>
         <Grid item xs={12} sm={12}>
           <Grid item xs={12} sm={12}>
-            <SelectField name={state.name} label={state.label} data={states} fullWidth
+            <SelectField name={state.name} label={state.label} data={states} 
             />
           </Grid>
         </Grid>

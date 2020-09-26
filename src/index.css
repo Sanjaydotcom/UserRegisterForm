@@ -69,15 +69,15 @@ button{
  
 }
 
-.error .react-tel-input .form-control, .error .react-tel-input .flag-dropdown, .react-tel-input .form-control.focus-visible, .react-tel-input .form-control.focus-visible ~ .flag-dropdown{
+.react-tel-input .form-control.focus-visible, .react-tel-input .form-control.focus-visible ~ .flag-dropdown{
   border: 1px solid red;
 }
-.makeStyles-OtpSingleBox-20:focused {
 
- background-color: #f25436!important;
-}
 .error .cst-option__control {
   border-color: #f25436!important;
+}
+.error {
+  border-color:  red!important;
 }
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
@@ -86,4 +86,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: #f25436!important;
   border-width: 1px!important;
+}
+.MuiSelect-outlined.MuiSelect-outlined {
+  padding-right: 32px;
+  width:505px!important;
 }

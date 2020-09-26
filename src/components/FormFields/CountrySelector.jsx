@@ -78,9 +78,10 @@ export default function CountrySelector(props) {
 
   const [valueCust, setValueCust] = useState(null);
   const { label, data, ...rest } = props;
-  const [ meta, helper] = useField(props);
+  const [field, meta, helper] = useField(props);
   const [focus, setFocus] = useState("unfocused")
   const { setValue } = helper;
+
   const [touched, error] = at(meta, 'touched', 'error');
   const isError = touched && error && true;
   function _renderHelperText() {
@@ -91,7 +92,6 @@ export default function CountrySelector(props) {
   }
   const changeHandler = value => {
     //function (for set value to formik
-    console.log(value)
     setValueCust(value);
     setValue(value);
   };
@@ -109,6 +109,7 @@ export default function CountrySelector(props) {
         onBlur={() => { setFocus("unfocused") }}
         variant="outlined" {...rest} error={meta.touched && meta.error && true} >
         <Select
+              {...field}
           errorText={touched && error}
           styles={styles}
           options={options}
@@ -116,7 +117,7 @@ export default function CountrySelector(props) {
           showDefaultOption={true}
           onChange={changeHandler}
           classNamePrefix='cst-option'
-          className={['cst-opt', meta.error ? 'error' : ''].join(' ')}
+         
           components={{
             Option: CountryFlagSelectOption,
             ValueContainer: CountryFlagValueContainer

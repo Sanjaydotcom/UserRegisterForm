@@ -118,9 +118,7 @@ export default makeStyles(theme => ({
     height:"62px !important" ,
     fontSize:"22px",
     marginRight:"42px",
-    "&:focus": {
-     
-    }
+
   },
   formControl:{
     
@@ -130,12 +128,7 @@ export default makeStyles(theme => ({
       width: "300px !important"
   
   },
-  phoneInput:{
-    "&:focused": {
-     
-      borderColor:"#f25436!important"
-    }
-  },
+
   UploadContainer:{
       display:"flex",
      

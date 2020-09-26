@@ -27,7 +27,7 @@ export default [
         'len',
         `${mobile.invalidErrorMsg}`,
         val => {
-          console.log(`value`, val);
+  
           return val && val.length >=8
         },
       ),

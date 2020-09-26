@@ -5,10 +5,10 @@ export default function Header(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.roots}>
       <div position="absolute" className={classes.appBar}>
-        <Grid spacing={3} className={classes.stepper}>
-          <Grid item xs={12} sm={12} center>
+        <Grid container spacing={3} className={classes.stepper}>
+          <Grid item xs={12} sm={12} >
             {props.children}
           </Grid>
         </Grid>
