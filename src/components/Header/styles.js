@@ -11,19 +11,21 @@ export default makeStyles(theme => ({
       backgroundColor: primary,
     color: theme.palette.text.primary,
     height:"60px!important",
-    paddingTop:"5px"
+    paddingTop:"5px",
+    textAlign:"center",
+
   },
   stepper: {
     width: 'auto',
     height:"60px",
    
-      marginLeft: theme.spacing(2),
+      marginLeft: "theme.spacing(2)",
     marginRight: theme.spacing(2),
-    [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
-      width: 1000,
+    [theme.breakpoints.up(600 + theme.spacing() * 2)]: {
+      width: "600",
     
-      marginLeft: 'auto',
-      marginRight: 'auto'
+      marginLeft: '25%',
+      marginRight: '25%'
     },
     backgroundColor: theme.palette.background.primary,
     color: theme.palette.text.primary
