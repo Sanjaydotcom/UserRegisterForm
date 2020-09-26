@@ -19,7 +19,7 @@ export default makeStyles(theme => ({
     width: '950px',
     height:"60px",
    
-      marginLeft: "theme.spacing(2)",
+      marginLeft: "theme.spacing(4)",
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing() * 2)]: {
       width: "1000",
