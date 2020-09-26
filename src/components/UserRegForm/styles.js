@@ -9,7 +9,7 @@ export default makeStyles(theme => ({
   stepper: {
     padding: theme.spacing(2, 0, 2),
     backgroundColor: primary,
-    width:"70wh"
+
   },
   stepperLabel:{
     color: theme.palette.text.default
