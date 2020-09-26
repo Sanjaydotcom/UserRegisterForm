@@ -12,7 +12,7 @@ export default function PersonalDetailsHeader(props) {
             Add Your Personal Details
       </Box>  
              </Typography>
-            <p align="center">lLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p align="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
     )
 
