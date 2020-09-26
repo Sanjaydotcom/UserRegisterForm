@@ -9,20 +9,20 @@ export default makeStyles(theme => ({
   roots: {
     width: 'auto',
       backgroundColor: primary,
-    color: theme.palette.text.primary,
+    color: theme.palette.text.primary,  
     height:"60px!important",
     paddingTop:"5px",
-    textAlign:"center",
+ 
 
   },
   stepper: {
-    width: 'auto',
+    width: '900px',
     height:"60px",
    
       marginLeft: "theme.spacing(2)",
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing() * 2)]: {
-      width: "600",
+      width: "1000",
     
       marginLeft: '25%',
       marginRight: '25%'
