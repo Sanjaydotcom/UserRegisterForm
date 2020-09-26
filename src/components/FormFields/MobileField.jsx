@@ -23,10 +23,6 @@ export default function MobileField(props) {
       return <FormHelperText> {error}</FormHelperText>;
     }
   }
-  function _onChange(e) {
-    //function for set value to formik
-    setValue(e.target.value);
-  }
 
   const cbFocusChange = (type, e) => {
     setFocus(type)
@@ -40,7 +36,7 @@ export default function MobileField(props) {
 
   return (
     <>
-      <p className={focus == "focused" ? classes.LabelColor : null}>{props.label}</p>
+      <p className={focus === "focused" ? classes.LabelColor : null}>{props.label}</p>
       <FormControl variant="outlined" className classes={classes.formControl} {...rest} error={meta.touched && meta.error && true} className={meta.error? 'error' : ''}>
         <PhoneInput
           country={'in'}

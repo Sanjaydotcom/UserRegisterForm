@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import OtpInput from 'react-otp-input';
 import { at } from 'lodash';
 import { useField } from 'formik';

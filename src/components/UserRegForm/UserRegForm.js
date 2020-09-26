@@ -123,9 +123,9 @@ export default function UserRegForm(props) {
                             size="large"
                             variant="contained"
                             color="primary"
-                            className={activeStep == 0 ? classes.button : classes.secondButton}
+                            className={activeStep === 0 ? classes.button : classes.secondButton}
                           >
-                            {activeStep == 1 ? 'Send OTP' : activeStep == 2 ? 'Verify OTP' : 'Next'}
+                            {activeStep === 1 ? 'Send OTP' : activeStep === 2 ? 'Verify OTP' : 'Next'}
 
                           </Button>
                           {isSubmitting && (
@@ -138,7 +138,7 @@ export default function UserRegForm(props) {
                         </div>
                       </div>
                     </Form>
-                    {activeStep == 2 ?
+                    {activeStep === 2 ?
                       <>
                         <hr className={classes.formSeperator} />
                         <OtpFooter />

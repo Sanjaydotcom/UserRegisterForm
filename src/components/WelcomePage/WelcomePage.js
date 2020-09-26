@@ -7,10 +7,11 @@ import done from "../../img/done.png";
 export default function WelcomePage(props) {
   const classes = useStyles();
   const [userName, setUserName] = useState("")
+
   useEffect(() => {
     const values = JSON.parse(localStorage.getItem('formValues'));
     setUserName(values.fullName)
-  });
+  },[]);
   return (
     <>
       <div className={classes.pageContainer}>
