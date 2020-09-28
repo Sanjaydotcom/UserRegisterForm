@@ -6,24 +6,24 @@ export default makeStyles(theme => ({
     position: 'relative',
     backgrounColor: primary
   },
-
   roots: {
     width: 'auto',
     backgroundColor: primary,
     color: theme.palette.text.primary,
-    height: "73px!important",
-    paddingTop: "10px",
+    height: "60px!important",
+    paddingTop: "5px",
   },
   stepper: {
-    width: 'auto',
+    width: '950px',
     height: "60px",
 
     marginLeft: "theme.spacing(2)",
     marginRight: theme.spacing(2),
-    [theme.breakpoints.down(600 + theme.spacing(1) * 2)]: {
-      width: "auto",
-     
-    
+    [theme.breakpoints.up(600 + theme.spacing() * 2)]: {
+      width: "1000",
+
+      marginLeft: '25%',
+      marginRight: '25%'
     },
     backgroundColor: theme.palette.background.primary,
     color: theme.palette.text.primary

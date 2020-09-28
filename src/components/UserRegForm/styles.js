@@ -24,13 +24,13 @@ export default makeStyles(theme => ({
     marginRight: "15px"
   },
   secondButton: {
-    width: "406px",
+    width: "400px!important",
     backgroundColor: "#f25436",
   },
   button: {
     marginTop: theme.spacing(3),
     backgroundColor: "#f25436",
-
+    width: "552px!important",
   },
   wrapper: {
     position: 'relative'
@@ -57,8 +57,8 @@ export default makeStyles(theme => ({
     color: "#f25436",
   },
   mobileInput: {
-    width: "551px",
-    height: "40px",
+    width: "551px!important",
+    height: "40px!important",
 
   },
   root: {
@@ -81,7 +81,7 @@ export default makeStyles(theme => ({
     [theme.breakpoints.up(600 + theme.spacing(3) * 2)]: {
       marginTop: theme.spacing(3),
       marginBottom: theme.spacing(6),
-      padding: theme.spacing(3),
+      padding: theme.spacing(3)
     },
     borderBottom: "1px solid lightgrey"
   },
@@ -112,8 +112,8 @@ export default makeStyles(theme => ({
 
   },
   OtpSingleBox: {
-    width: "62px",
-    height: "62px",
+    width: "62px !important",
+    height: "62px !important",
     fontSize: "22px",
     marginRight: "42px",
 
@@ -122,7 +122,7 @@ export default makeStyles(theme => ({
     backgroundColor: " rgb(253, 214, 214) !important",
     color: "rgb(104, 7, 60)",
     height: "55px !important",
- 
+    width: "300px !important"
   },
 
   UploadContainer: {
