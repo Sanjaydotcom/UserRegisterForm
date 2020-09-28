@@ -82,7 +82,9 @@ button{
 .error {
   border-color:  red!important;
 }
-
+.react-tel-input .form-control {
+  width: 551px!important;
+}
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
@@ -115,7 +117,7 @@ and (min-width : 1224px) {
    .css-4pstss-control {
     width: 551px!important;
   }
-  .makeStyles-mobileInput-14{
+  .react-tel-input .form-control{
     width: 551px!important;
   }
   .makeStyles-button-7 {
@@ -138,7 +140,7 @@ and (max-device-width : 1024px) {
    .css-4pstss-control {
     width: 551px!important;
   }
-  .makeStyles-mobileInput-14{
+  .react-tel-input .form-control{
     width: 551px!important;
   }
   .makeStyles-button-7 {
@@ -180,7 +182,7 @@ and (max-device-width : 480px) {
  .css-4pstss-control {
   width:327px!important
 }
-.makeStyles-mobileInput-14{
+.react-tel-input .form-control{
 
   
     width:327px!important
@@ -204,7 +206,4 @@ and (max-device-width : 480px) {
   .makeStyles-OtpContainer-20 {
     width: 340px!important;
   }
-}
-.react-tel-input .form-control {
-  width: 551px!important;
 }
