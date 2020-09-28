@@ -41,7 +41,7 @@ export default function MobileField(props) {
           {...field}
           onFocus={() => cbFocusChange('focused')}
           onBlur={(e) => cbFocusChange('unfocused', e)}
-          classNamePrefix='cst-option'
+   
           value={field.value}
           inputClass={classes.mobileInput}
         />
