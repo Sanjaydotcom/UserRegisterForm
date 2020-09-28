@@ -75,7 +75,9 @@ button{
 .react-tel-input .form-control.focus-visible, .react-tel-input .form-control.focus-visible ~ .flag-dropdown{
   border: 1px solid  #f25436;
 }
-
+.makeStyles-button-7  {
+  width: 551px!important;
+}
 .error .cst-option__control {
   border-color: #f25436!important;
 }
@@ -85,6 +87,7 @@ button{
 .react-tel-input .form-control {
   width: 551px!important;
 }
+
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
@@ -168,7 +171,7 @@ and (max-device-width : 480px) {
 .MuiTypography-h4 {
   font-size: 1.5rem!important;
 }
-.makeStyles-button-7 {
+.makeStyles-button-7  {
   width: 325px!important;
 }
 .MuiSelect-outlined.MuiSelect-outlined
