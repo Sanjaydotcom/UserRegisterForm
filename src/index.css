@@ -99,6 +99,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   padding-right: 32px;
   width:505px!important;
 }
+.MuiButton-containedPrimary {
+  width: 551px!important;
+}
 .makeStyles-stepper-2 {
   padding: 16px 0px 16px;
   background-color: #324466;
