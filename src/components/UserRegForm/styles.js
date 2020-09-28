@@ -122,7 +122,7 @@ export default makeStyles(theme => ({
     backgroundColor: " rgb(253, 214, 214) !important",
     color: "rgb(104, 7, 60)",
     height: "55px !important",
-    width: "300px !important"
+ 
   },
 
   UploadContainer: {
