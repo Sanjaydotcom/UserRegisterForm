@@ -205,6 +205,6 @@ and (max-device-width : 480px) {
     width: 340px!important;
   }
 }
-.makeStyles-mobileInput-14 {
+.react-tel-input .form-control {
   width: 551px!important;
 }

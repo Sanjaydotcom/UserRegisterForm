@@ -22,7 +22,7 @@ export default makeStyles(theme => ({
     marginRight: theme.spacing(2),
     [theme.breakpoints.down(600 + theme.spacing(1) * 2)]: {
       width: "auto",
-
+     
     
     },
     backgroundColor: theme.palette.background.primary,
