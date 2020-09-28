@@ -31,7 +31,7 @@ export default function CheckboxField(props) {
   
   return (
     <Grid container>
-      <Grid item xs={1} lg={1} md={1} sm={1}>
+      <Grid item xs={1} lg={1} md={1} sm={12}>
         <FormControl {...rest}>
           <FormControlLabel
             value={field.checked}
@@ -41,7 +41,7 @@ export default function CheckboxField(props) {
           {_renderHelperText()}
         </FormControl>
       </Grid>
-      <Grid item xs={10} lg={10} md={10} sm={11}>
+      <Grid item xs={6} lg={6} md={6} sm={12}>
         <p className={classes.checkBoxLabel}>{label} <span>Terms And Conditions</span></p>
       </Grid>
     </Grid>
