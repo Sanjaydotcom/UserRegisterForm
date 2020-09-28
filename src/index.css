@@ -123,8 +123,8 @@ and (min-width : 1224px) {
   .makeStyles-stepper-2 {
     padding: 16px 0px 16px;
     background-color: #324466;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 }
 @media only screen 
