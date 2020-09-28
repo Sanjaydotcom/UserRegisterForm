@@ -94,6 +94,113 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   width:505px!important;
 }
 .makeStyles-stepper-2 {
+  padding: 16px 0px 16px;
+  background-color: #324466;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+@media only screen 
+and (min-width : 1224px) {
+  .makeStyles-OtpSingleBox-22 {
+    width: 66px!important;
+    height: 66px!important;
+    font-size: 21px!important;
+    margin-right: 36px!important;
+  
+  }
+  .cst-option__control {
+    width: 551px!important;
+  }
+   .css-4pstss-control {
+    width: 551px!important;
+  }
+  .makeStyles-mobileInput-14{
+    width: 551px!important;
+  }
+  .makeStyles-button-7 {
+    width: 550px!important;
+  }
+  .makeStyles-stepper-2 {
+    padding: 16px 0px 16px;
+    background-color: #324466;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+}
+@media only screen 
 
+and (max-device-width : 1024px) {
 
+  .cst-option__control {
+    width: 551px!important;
+  }
+   .css-4pstss-control {
+    width: 551px!important;
+  }
+  .makeStyles-mobileInput-14{
+    width: 551px!important;
+  }
+  .makeStyles-button-7 {
+    width: 550px!important;
+  }
+  .makeStyles-stepper-2 {
+    padding: 16px 0px 16px;
+    background-color: #324466;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.makeStyles-OtpSingleBox-22 {
+  width: 66px!important;
+  height: 66px!important;
+  font-size: 21px!important;
+  margin-right: 36px!important;
+
+}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.MuiTypography-h4 {
+  font-size: 1.5rem!important;
+}
+.makeStyles-button-7 {
+  width: 325px!important;
+}
+.MuiSelect-outlined.MuiSelect-outlined
+{
+  width: 281px!important;
+
+}
+.cst-option__control {
+  width:327px!important 
+}
+ .css-4pstss-control {
+  width:327px!important
+}
+.makeStyles-mobileInput-14{
+
+  
+    width:327px!important
+  }
+  .makeStyles-secondButton-6 {
+    width: 231px!important ;
+  }
+  .makeStyles-stepper-2 {
+    padding: 10px 0px 5px!important ;
+    background-color: #324466;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .makeStyles-OtpSingleBox-22 {
+    width: 37px!important;
+    height: 37px!important;
+    font-size: 21px!important;
+    margin-right: 23px!important;
+
+  }
+  .makeStyles-OtpContainer-20 {
+    width: 340px!important;
+  }
 }

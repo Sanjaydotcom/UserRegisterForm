@@ -29,11 +29,12 @@ function _renderStepContent(step) {
   switch (step) {
     case 0:
       return <PersonalDetails formField={formField} />;
-
+      
     case 1:
       return <CompanyDetails formField={formField} />;
     case 2:
       return <OtpValidation formField={formField} />;
+
 
 
     default:

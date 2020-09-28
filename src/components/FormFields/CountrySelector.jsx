@@ -30,7 +30,7 @@ export const CountryFlagSelectOption = props => {
   //Defalut function for Country select
   return (
     <components.Option {...props}>
-      <div style={{ display: "flex", alignItems: "center", width: "505px" }}>
+      <div style={{ display: "flex", alignItems: "center", }}>
         <CountryFlag size={props.flagSize} code={props.value.toLowerCase()} />
         {props.label}
       </div>
@@ -42,7 +42,7 @@ export const CountryFlagValueContainer = ({ children, ...props }) => {
   //Defalut function for Country select
   const code = (props.hasValue && props.getValue()[0].value) || false;
   return (
-    <div style={{ display: "flex", flexGrow: 1, width: "513px" }}>
+    <div style={{ display: "flex", flexGrow: 1, }}>
       {(code && <CountryFlag code={code.toLowerCase()} />) || null}
       <components.ValueContainer {...props}>
         {children}
