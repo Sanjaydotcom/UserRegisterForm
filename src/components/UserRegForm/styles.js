@@ -57,7 +57,7 @@ export default makeStyles(theme => ({
     color: "#f25436",
   },
   mobileInput: {
-    width: "551px!important",
+    width: "551px",
     height: "40px",
 
   },
