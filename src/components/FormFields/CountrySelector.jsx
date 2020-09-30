@@ -105,12 +105,11 @@ export default function CountrySelector(props) {
     <>
       <p className={focus === "focused" ? classes.LabelColor : null}>{props.label}</p>
       <FormControl
-
         onFocus={() => { setFocus("focused") }}
         onBlur={() => { setFocus("unfocused") }}
         variant="outlined" {...rest} error={meta.touched && meta.error && true} >
         <Select
-              {...field}
+          {...field}
           errorText={touched && error}
           styles={styles}
           options={options}
@@ -118,7 +117,6 @@ export default function CountrySelector(props) {
           showDefaultOption={true}
           onChange={changeHandler}
           classNamePrefix='cst-option'
-         
           components={{
             Option: CountryFlagSelectOption,
             ValueContainer: CountryFlagValueContainer

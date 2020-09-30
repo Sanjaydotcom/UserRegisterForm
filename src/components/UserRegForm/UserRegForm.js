@@ -54,9 +54,7 @@ export default function UserRegForm(props) {
 
   async function _submitForm(values, actions) {
     await _sleep(1000);
-    console.log(JSON.stringify(values, null, 2));
     const formValues = JSON.stringify(values, null, 2)
-    console.log(formValues)
     localStorage.setItem("formValues", formValues);
     actions.setSubmitting(false);
     props.history.push("/Welcome");
