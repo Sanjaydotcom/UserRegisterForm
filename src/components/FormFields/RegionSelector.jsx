@@ -30,7 +30,7 @@ useEffect(() => {
 if(country !== undefined){
   fetchState()
 }
-});
+},[formValues, country, fetchState]);
 function fetchState (){
       //function for fetch statenames json data
     const stateFilter = CountryJson.filter((data) => {
