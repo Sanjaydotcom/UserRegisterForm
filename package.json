@@ -12,6 +12,7 @@
     "lodash": "^4.17.20",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-country-region-selector": "^3.0.1",
     "react-dom": "^16.13.1",
     "react-otp-input": "^2.0.2",
     "react-phone-input-2": "^2.13.8",

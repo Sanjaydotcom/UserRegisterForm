@@ -1,7 +1,8 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import { InputField, CheckboxField } from '../../FormFields';
-import ImageUpload from "../../FormFields/ImageUpload"
+import ImageUpload from "../../FormFields/ImageUpload";
+
 export default function PaymentForm(props) {
   const {
     formField: { companyName, email, jobTitile, yearsOfExperience, termsAndConditions }
@@ -10,6 +11,7 @@ export default function PaymentForm(props) {
   return (
     <React.Fragment>
       <Grid container spacing={3}>
+      
         <Grid item xs={12} md={12}>
           <ImageUpload />
         </Grid>

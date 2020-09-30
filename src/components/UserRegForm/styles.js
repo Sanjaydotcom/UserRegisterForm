@@ -56,6 +56,10 @@ export default makeStyles(theme => ({
   emailFooter: {
     color: "#f25436",
   },
+  regionSelector:{
+    width: "551px!important",
+    height: "40px!important",
+  },
   mobileInput: {
     width: "551px!important",
     height: "40px!important",

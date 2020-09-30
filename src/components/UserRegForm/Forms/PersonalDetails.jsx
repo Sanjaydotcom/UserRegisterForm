@@ -1,21 +1,9 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import { InputField, SelectField, CountrySelector, MobileField } from '../../FormFields';
-import SelectGender from "../../FormFields/SelectGender"
-const states = [
-    {
-    value: '1',
-    label: 'Kerala'
-  },
-  {
-    value: '2',
-    label: 'Tamil Nadu'
-  },
-  {
-    value: '3',
-    label: 'Karnataka'
-  }
-];
+import SelectGender from "../../FormFields/SelectGender";
+import RegionSelector from '../../FormFields/RegionSelector'
+
 
 export default function AddressForm(props) {
   const {
@@ -30,6 +18,7 @@ export default function AddressForm(props) {
   return (
     <React.Fragment>
       <Grid container spacing={3}>
+    
         <Grid item xs={12} sm={12}>
           <InputField name={fullName.name} label={fullName.label} fullWidth />
         </Grid>
@@ -39,11 +28,8 @@ export default function AddressForm(props) {
         <Grid item xs={12} sm={12}>
           <CountrySelector name={countrySelect.name} label={countrySelect.label} />
         </Grid>
-        <Grid item xs={12} sm={12}>
-          <Grid item xs={12} sm={12}>
-            <SelectField name={state.name} label={state.label} data={states} 
-            />
-          </Grid>
+        <Grid item xs={12} md={12}>
+          <RegionSelector  name={state.name} label={state.label} />
         </Grid>
         <Grid item xs={12} sm={12}>
           <MobileField name={mobile.name} label={mobile.label} value={mobile.value} />

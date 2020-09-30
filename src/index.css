@@ -97,3 +97,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 
 }
+option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 7em!important;
+  padding: 10px 20px 11px 10px!important;
+}

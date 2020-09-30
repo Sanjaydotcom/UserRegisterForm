@@ -28,15 +28,11 @@ function _renderStepContent(step) {
   //function for render Stepper Step
   switch (step) {
     case 0:
-      return <PersonalDetails formField={formField} />;
-      
+      return <PersonalDetails formField={formField} />; 
     case 1:
       return <CompanyDetails formField={formField} />;
     case 2:
       return <OtpValidation formField={formField} />;
-
-
-
     default:
       return <div>Not Found</div>;
   }

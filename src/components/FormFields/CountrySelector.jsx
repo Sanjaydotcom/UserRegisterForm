@@ -42,7 +42,7 @@ export const CountryFlagValueContainer = ({ children, ...props }) => {
   //Defalut function for Country select
   const code = (props.hasValue && props.getValue()[0].value) || false;
   return (
-    <div style={{ display: "flex", flexGrow: 1, width: "513px" }}>
+    <div style={{ display: "flex", flexGrow: 1, width: "512px" }}>
       {(code && <CountryFlag code={code.toLowerCase()} />) || null}
       <components.ValueContainer {...props}>
         {children}
@@ -94,6 +94,7 @@ export default function CountrySelector(props) {
     //function (for set value to formik
     setValueCust(value);
     setValue(value);
+    console.log(value)
   };
 
   useEffect(() => {
