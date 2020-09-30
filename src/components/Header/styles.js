@@ -14,7 +14,7 @@ export default makeStyles(theme => ({
     paddingTop: "5px",
   },
   stepper: {
-    width: '950px',
+    width: 'auto',
     height: "60px",
 
     marginLeft: "theme.spacing(2)",

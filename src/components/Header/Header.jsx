@@ -11,7 +11,7 @@ export default function Header(props) {
         <Grid item xs={0} lg={3} md={3} xl={3} sm={0} >
         </Grid>
 
-          <Grid item xs={12} lg={9} md={9}  xl={9} sm={12} justify="center" >
+          <Grid item xs={12} lg={6} md={6}  xl={6} sm={12} justify="center" >
             {props.children}
           </Grid>
         </Grid>
