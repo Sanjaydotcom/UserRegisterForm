@@ -28,17 +28,15 @@ useEffect(() => {
   const valueCountry =formValues;
   setCountry(valueCountry.country.label)
 if(country !== undefined){
-  fetchState()
-}
-},[formValues, country, fetchState]);
-function fetchState (){
-      //function for fetch statenames json data
+    //function for fetch statenames json data
     const stateFilter = CountryJson.filter((data) => {
       return data.name === country;
     });
     const states = stateFilter[0].states;
     setFiteredState(states)
 }
+},[formValues, country]);
+
 
    const menuItem = fiteredState.map((item, index) => (
     <MenuItem key={index} value={item.name}>

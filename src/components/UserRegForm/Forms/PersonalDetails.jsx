@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import { InputField, SelectField, CountrySelector, MobileField } from '../../FormFields';
+import { InputField, CountrySelector, MobileField } from '../../FormFields';
 import SelectGender from "../../FormFields/SelectGender";
 import RegionSelector from '../../FormFields/RegionSelector'
 
